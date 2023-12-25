@@ -1,39 +1,104 @@
-.App {
-  text-align: center;
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+.gap-10{
+  gap: 10px;
+}
+.gap-30px{
+  gap:30px;
+}
+.gap-15px{
+  gap: 15px;
+}
+.card-wrapper{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.overlay {
+animation: fade .4s ease-in-out forwards;
+position: fixed;
+z-index: 50;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
+@keyframes fade {
   0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
+    backdrop-filter: blur(0px);
   }
   100% {
-    transform: translateY(0px);
+    backdrop-filter: blur(10px);
+
+  }
+}
+
+.responsive_menu {
+  padding-top: 20px;
+  padding-left: 5px;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #CA282C;
+  /* left: 100%; */
+  transition: 0.4s all ease-in-out;
+  .nav-item {
+    min-width: 40px;
+    min-height: 20px;
+  }
+  > li {
+    list-style: none;
+    color:white !important;
+  }
+  &.opened {
+    /* left: 60%; */
+   
+    @media (max-width:992px) {
+      transform: translateX(80%);
+    }
+    @media (max-width:762px) {
+      transform: translateX(60%);
+    }
+  }
+  &.gone {
+    /* left: 100%; */
+    transform: translateX(100%);
+  }
+}
+
+.loading_page {
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > span {
+    font-size: 40px;
+    color:red;
+    font-style: italic;
   }
 }

@@ -1,0 +1,43 @@
+.popular-products-container {
+  padding: 20px;
+}
+
+.popular-products-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.popular-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.popular-product {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popular-product-image {
+  width: 100%; 
+  max-width: 200px; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.popular-product-details {
+  margin-top: 10px;
+}
+
+.popular-product-brand {
+  font-size: 18px;
+}
+
+.popular-product-price {
+  font-size: 16px;
+  color: #777; 
+}
+
+.popular-product-rating {
+  margin-top: 10px;
+}

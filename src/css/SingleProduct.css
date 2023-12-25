@@ -1,0 +1,95 @@
+
+
+.main-product-wrapper {
+  padding-top: 5rem;
+  background-color: beige;
+}
+
+.description-wrapper,
+.reviews-wrapper,
+.popular-wrapper {
+  padding-top: 5rem;
+}
+
+.additional-images {
+  display: flex;
+  margin-top: 20px;
+}
+
+.additional-images img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.additional-images img:hover {
+  border-color: #007bff;
+}
+
+
+.main-product-details h3.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1b;
+}
+
+.main-product-details p.price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.button,
+.submit-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.submit-button:hover {
+  background-color: #ddd;
+}
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.review-form {
+  margin-top: 2rem;
+}
+
+.review-form h4 {
+  margin-bottom: 1rem;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-form textarea {
+  width: 100%;
+  height: 10rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.review-form .submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

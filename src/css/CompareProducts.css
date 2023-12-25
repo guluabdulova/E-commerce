@@ -1,0 +1,17 @@
+.compare-p-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .compare-p-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .compare-p-card p {
+    margin: 8px 0;
+  }
+
+  

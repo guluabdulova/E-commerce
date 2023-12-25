@@ -1,0 +1,42 @@
+.product-card {
+  background-color: rgb(210, 210, 210);
+  .brand {
+    color:rgb(65, 65, 65);
+  }
+  .title {
+    color:rgb(65, 65, 65);
+  }
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-card .details h6 {
+  font-size: 13px;
+}
+
+.product-card .details {
+  font-size: 16px; 
+}
+
+.product-card {
+  position: relative;
+}
+
+.wishlist-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.action-bar {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.product-card:hover .wishlist-icon,
+.product-card:hover .action-bar {
+  display: block;
+}
